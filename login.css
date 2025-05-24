@@ -1,0 +1,113 @@
+
+body {
+    background-image:url("https://th.bing.com/th/id/R.38ca0ead98a00e42ee67bdeac6191f4e?rik=mx586K%2fLQwKOsA&riu=http%3a%2f%2fs1.bwallpapers.com%2fwallpapers%2f2014%2f05%2f29%2ftravel-desktop-wallpaper_121802656.jpg&ehk=2dXGYKBaUcr4uW8n9x%2fPMEBDvUgXjbFIcq9J%2fuOsC40%3d&risl=&pid=ImgRaw&r=0");
+    height:100vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-section {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+   
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #00008b;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #00008b;
+    text-align: left;
+}
+
+.login-section input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-section input:focus {
+    outline: none;
+    border-color: #00008b;
+    box-shadow: 0 0 5px rgba(0, 0, 139, 0.5);
+}
+
+.login-section button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00008b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-section button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.login-section button svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.login-section button:hover svg {
+    transform: translateX(5px);
+}
+
+.login-section .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-section .links a {
+    color: #00008B;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.login-section .links a:hover {
+    color: #0056b3; /* Change color on hover */
+    text-decoration: underline;
+}

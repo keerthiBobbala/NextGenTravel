@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking - Home</title>
+    <link rel="stylesheet" href="landing.css">
+    <script src="landing.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="https://www.clipartkey.com/mpngs/m/219-2199580_world-travel-logo-design-travel-agency-company-logo.png" alt="Logo" style="height: 15px;">
+            NextGen Travel
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="login.html" id="logout">Logout</a></li>
+            <!-- Add this to your navbar -->
+            <li>
+                <a href="#cart" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> <!-- This will show the number of items in the cart -->
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <section id="home">
+            <h2 class="h">Popular Destinations</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a destination..." />
+                <button id="search-button" class="btn">Search</button>
+                <button id="voice-search-button" class="btn"><i class="fas fa-microphone"></i></button> <!-- Voice Search Button -->
+            </div>
+            
+            <div class="destination-container">
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.ggO-bjs8NK_4tVgQCovMBQHaHa?w=199&h=200&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Paris">
+                    <h3 class="h">Agra,Uttarpradesh</h3>
+                    <p>Discover Agra, where the breathtaking Taj Mahal, a symbol of eternal love and architectural marvel, awaits your admiration.</p>
+                    <div class="button-group">
+                        <a href="destination.html?destination=paris" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.3_-HEJ7CxzfNlLi1O_jUrQHaE7?w=254&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="New York">
+                    <h3 class="h">Darjeeling, West Bengal</h3>
+                    <p>Experience the charm of Darjeeling with its stunning Himalayan views, lush tea gardens, and the enchanting Toy Train journey.</p>
+                    <div class="button-group">
+                        <a href="destination1.html?destination=new-york" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.h0TsHpyyNDO8ednlhHPC2wHaE7?w=291&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Tokyo">
+                    <h3 class="h">Goa</h3>
+                    <p>Unwind in Goa's paradise of golden beaches, vibrant nightlife, and rich Portuguese heritage, offering an unforgettable escape.</p>
+                    <div class="button-group">
+                        <a href="destination2.html?destination=tokyo" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.J0zBIsE4nqgipUVVu1yI3wHaEz?w=235&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Sydney">
+                    <h3 class="h">Jaisalmer, Rajasthan</h3>
+                    <p>Explore Jaisalmer, where the golden sands of the Thar Desert, historic forts, and vibrant culture create an enchanting desert adventure.</p>
+                    <div class="button-group">
+                        <a href="destination3.html?destination=sydney" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.LdlhjTg3nrgs5ty91XiEkwHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="London">
+                    <h3 class="h">Kerala</h3>
+                    <p>Immerse yourself in Kerala's serene backwaters, lush greenery, and rich cultural heritage, offering a peaceful escape in God's Own Country.</p>
+                    <div class="button-group">
+                        <a href="destination4.html?destination=london" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            
+            
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.gmSAU64KOxwSxugjzfn0GwHaE9?w=249&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Rome">
+                    <h3 class="h">Leh, Ladakh</h3>
+                    <p>Embark on an adventure in Leh, Ladakh, with its awe-inspiring landscapes, serene monasteries, and thrilling high-altitude experiences.</p>
+                    <div class="button-group">
+                        <a href="destination5.html?destination=rome" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.AOUhGjlABOMp21gcR3SJdAHaEK?w=323&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Barcelona">
+                    <h3 class="h">Meghalaya</h3>
+                    <p>Discover Meghalaya, where living root bridges, majestic waterfalls, and lush green landscapes promise a unique and mesmerizing experience.</p>
+                    <div class="button-group">
+                        <a href="destination6.html?destination=barcelona" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.kI6fTWGCQF2vlbD3nwjpLQHaFj?w=207&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Queenstown">
+                    <h3 class="h">Odisha</h3>
+                    <p>Experience Odisha's rich tapestry of ancient temples, vibrant tribal culture, and pristine beaches for a unique and captivating journey.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination7.html?destination=queenstown" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.8TmfLWg3FuCx6vM9nnpFVAHaE3?w=258&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Istanbul">
+                    <h3 class="h">Rann of Kachchh (Kutch), Gujarat</h3>
+                    <p>Explore the Rann of Kutch's vast white desert, vibrant festivals, and rich culture for a unique adventure.</p>
+                    <div class="button-group">
+                        <a href="destination8.html?destination=istanbul" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.WDpqawGQPz87byhpM0icCAHaE7?w=273&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Udaipur, Rajasthan</h3>
+                    <p>Discover the enchanting Udaipur, where shimmering lakes, majestic palaces, and rich history create a romantic and royal escape.</p>
+                    <div class="button-group">
+                        <a href="destination9.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.1gD6R6_GAWfYaWbYSPA_TAHaEK?w=327&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Andhra Pradesh - Visakhapatnam (Vizag)
+
+                    </h3>
+                    <p> Explore Visakhapatnam (Vizag), where pristine beaches meet the historic Submarine Museum and serene Simhachalam Temple.
+
+
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination10.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP._QP5JazEEgeeO1-bA5xmRgHaFj?w=231&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Arunachal Pradesh - Tawang
+
+                    </h3>
+                    <p>Discover Tawang in Arunachal Pradesh for the majestic Tawang Monastery, breathtaking scenic beauty, and serene Sela Pass.</p>
+                    <div class="button-group">
+                        <a href="destination11.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.MtSzvsRbRj-vFoaiFYMh5AHaE7?w=279&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Assam - Kaziranga National Park
+
+                    </h3>
+                    <p>Explore Assam's Kaziranga National Park, a UNESCO site and the renowned home to endangered one-horned rhinoceros.</p>
+                    <div class="button-group">
+                        <a href="destination12.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.zqTtsL0YK_yzNLS6XN4SBgHaE6?w=202&h=134&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Bihar - Bodh Gaya
+                    </h3>
+                    <p>Visit Bodh Gaya in Bihar, where Lord Buddha attained enlightenment, and explore the revered and historical UNESCO World Heritage Mahabodhi Temple.</p>
+                    <div class="button-group">
+                        <a href="destination13.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.mea2K9jnMGnBfYUuWPvJnQHaE6?w=229&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Haryana - Kurukshetra
+                    </h3>
+                    <p>Visit Kurukshetra in Haryana, the historic city of the Mahabharata battle. Explore its ancient temples and sacred sites, and immerse yourself in rich heritage.</p>
+                    <div class="button-group">
+                        <a href="destination14.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.MWApm4Z75AyJM2RuByd35QHaEK?w=267&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Himachal Pradesh - Shimla
+                    </h3>
+                    <p>Visit Shimla in Himachal Pradesh, a charming hill station known for its colonial architecture, scenic landscapes, and vibrant Mall Road.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination15.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.Z4kPPo6yj2-aU3RJSjKuuQHaE7?w=257&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Jharkhand - Deoghar
+                    </h3>
+                    <p>Visit Deoghar in Jharkhand, renowned for the ancient Baba Baidyanath Temple, a significant and revered pilgrimage site with immense cultural significance.</p>
+                    <div class="button-group">
+                        <a href="destination16.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.7X5_xOdVwXQBX-DyzoFVMAHaE8?w=338&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Karnataka - Hampi
+                    </h3>
+                    <p>Visit Hampi in Karnataka, a UNESCO World Heritage site known for its magnificent ruins, stunning landscapes, impressive temples, and ancient marketplaces.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination17.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.uerknNZz1Ba8fLdIJ5zpuQHaEK?w=331&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Madhya Pradesh - Khajuraho
+                    </h3>
+                    <p>Visit Khajuraho in Madhya Pradesh, a UNESCO site known for its stunning Hindu and Jain temples, intricate sculptures, and culture.
+                    </p>
+                    <div class="button-group">
+                        <a href="destination18.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.YdZCa-gge4_B9lpFCybqVgHaE8?w=250&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Maharashtra - Mumbai
+                    </h3>
+                    <p>Visit Mumbai in Maharashtra, a bustling metropolis known for its vibrant culture, iconic landmarks, thriving Bollywood industry, and diverse culinary delights.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination19.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.3I_BY_rpfds2d8WJ4Awd2QHaE8?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Manipur - Imphal
+                    </h3>
+                    <p>Visit Imphal in Manipur, a serene city known for its rich history, vibrant culture, scenic landscapes, and the historic Kangla Fort.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination20.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.QE0_v1q0F_oXSE1Ys1ezpQHaE8?w=235&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Mizoram - Aizawl
+                    </h3>
+                    <p>Visit Aizawl in Mizoram, a picturesque city known for its lush landscapes, vibrant Mizo culture, bustling markets, and panoramic views.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination21.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://www.adotrip.com/public/images/city/5c3eb3ad03308-Mokukchung%20Sight%20Seeing%20Tour.jpg" class="a" alt="Dubai">
+                    <h3 class="h">Nagaland - Kohima
+                    </h3>
+                    <p>Visit Kohima in Nagaland, a city known for its rich tribal heritage, vibrant Hornbill Festival, stunning landscapes, and historical significance.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination22.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.CbrkUAYBW_sIfdlQMQBWwgHaE8?w=248&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Punjab - Amritsar
+                    </h3>
+                    <p>Visit Amritsar in Punjab, a city renowned for the iconic Golden Temple, vibrant culture, rich history, and delicious Punjabi cuisine.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination23.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.ytiO4CXBStDwNfB0-udp5wHaE7?w=294&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Tamil Nadu - Chennai
+                    </h3>
+                    <p>Visit Chennai in Tamil Nadu, a bustling city known for its rich cultural heritage, beautiful beaches, historic temples, and vibrant arts and music scene.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination24.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.9YP40s_I9qNyE8JUGoX_dAHaEK?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Telangana - Hyderabad
+                    </h3>
+                    <p>Visit Hyderabad in Telangana, a city known for its rich history, vibrant culture, iconic Charminar, and delectable cuisine, including the famous Hyderabadi biryani.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination25.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.WrdrSW68NWBKi2jEh3mN6AHaE0?w=239&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Tripura - Agartala
+                    </h3>
+                    <p>Visit Agartala in Tripura, a city known for its rich cultural heritage, historic Ujjayanta Palace, beautiful temples, vibrant markets, and lush natural greenery.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination26.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.Rltj1rePoqcaK5OsKjyp3wHaEK?w=322&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Uttar Pradesh - Varanasi
+                    </h3>
+                    <p>Visit Varanasi in Uttar Pradesh, an ancient city known for its profound spiritual significance, sacred Ganges River, vibrant ghats, and historic majestic temples.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination27.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.0LEeSr6n6mnLzFCIM0b2wAHaEK?w=284&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">Uttarakhand - Nainital
+                    </h3>
+                    <p>Visit Nainital in Uttarakhand, a picturesque hill station known for its beautiful Naini Lake, lush green hills, charming colonial architecture, and scenic viewpoints.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination28.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://th.bing.com/th/id/OIP.bleAkTntWj0CK2r5vQfHdwHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="a" alt="Dubai">
+                    <h3 class="h">West Bengal - Kolkata
+                    </h3>
+                    <p>Visit Kolkata in West Bengal, a vibrant city known for its rich cultural heritage, historic landmarks, bustling markets, literary legacy, and delicious Bengali cuisine.
+
+                    </p>
+                    <div class="button-group">
+                        <a href="destination29.html?destination=dubai" class="btn">View More</a>
+                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="chatbot" style="display: none;">
+            <h2>AI Chatbot</h2>
+            <div id="chat-container">
+                <div id="chatbox">
+                    <div id="messages"></div>
+                    <input type="text" id="user-input" placeholder="Ask me anything..." />
+                    <button id="send-btn">Send</button>
+                    <button id="voice-btn">🎤</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>

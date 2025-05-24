@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="hotel1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Booking</h1>
+        
+        <div id="hotel-selection">
+            <h2>Select a Hotel</h2>
+            <form id="hotel-form">
+                <label for="hotel">Choose a hotel:</label>
+                <select id="hotel" required>
+                    <option value="" disabled selected>Select a hotel</option>
+                    <option value="ITC Mughal">ITC Mughal, a Luxury Collection Resort & Spa - $250 per night</option>
+                    <option value="Hotel Tara Palace">Hotel Tara Palace - $100 per night</option>
+                    <option value="Hotel Maple Grand">Hotel Maple Grand Fatehabad Road - $80 per night</option>
+                    <option value="Hotel Alleviate Mantola">Hotel Alleviate Mantola - $60 per night</option>
+                    <option value="Moustache Hostel">Moustache Hostel Agra - $20 per night</option>
+                </select>
+                <button type="submit">Select Hotel</button>
+            </form>
+        </div>
+
+        <div id="availability-check" style="display:none;">
+            <h2>Check Room Availability</h2>
+            <form id="availability-form">
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" required>
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" required>
+                <button type="submit">Check Availability</button>
+            </form>
+            <div id="availability-result"></div>
+        </div>
+
+        <div id="booking-details" style="display:none;">
+            <h2>Booking Details</h2>
+            <p id="room-info"></p>
+            <form id="user-info-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+                <label for="payment">Payment Details:</label>
+                <input type="text" id="payment" required placeholder="Credit Card Number">
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+
+        <div id="confirmation" style="display:none;">
+            <h2>Booking Confirmation</h2>
+            <p>Your booking has been confirmed!</p>
+            <p id="confirmation-details"></p>
+            <button onclick="goBack()">Book Another</button>
+        </div>
+    </div>
+
+    <script src="hotel1.js"></script>
+</body>
+</html>

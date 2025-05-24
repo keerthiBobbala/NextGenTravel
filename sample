@@ -1,0 +1,185 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const sendButton = document.getElementById("send-btn");
+    const voiceButton = document.getElementById("voice-btn");
+    const userInput = document.getElementById("user-input");
+    const messages = document.getElementById("messages");
+
+    const destinations = {
+        "Agra, Uttar Pradesh": {
+            overview: "Agra is home to the Taj Mahal, a symbol of eternal love and one of the Seven Wonders of the World.",
+            attractions: ["Taj Mahal", "Agra Fort", "Fatehpur Sikri"],
+            activities: ["Heritage walk", "Food tour", "Shopping at Sadar Bazaar"],
+            travel_tips: ["Best time: October to March", "Avoid peak summer months due to extreme heat"],
+            transportation: ["Nearest airport: Agra Airport", "Well-connected by rail and road"]
+        },
+        "Darjeeling, West Bengal": {
+            overview: "Darjeeling, the 'Queen of the Hills,' is famous for its scenic beauty, tea plantations, and the Darjeeling Himalayan Railway (Toy Train).",
+            attractions: ["Tiger Hill", "Batasia Loop", "Darjeeling Zoo"],
+            activities: ["Tea plantation tours", "Toy Train ride", "Trekking"],
+            travel_tips: ["Best time: March to May, September to November", "Carry warm clothes"],
+            transportation: ["Nearest airport: Bagdogra Airport", "Well-connected by Toy Train and road"]
+        },
+        "Goa": {
+            overview: "Goa is India's party capital, known for its beautiful beaches, vibrant nightlife, and Portuguese heritage.",
+            attractions: ["Baga Beach", "Dudhsagar Waterfalls", "Fort Aguada"],
+            activities: ["Surfing", "Nightlife", "Beach Yoga"],
+            travel_tips: ["Best time: November to February", "Carry sunscreen and beachwear"],
+            transportation: ["Nearest airport: Goa International Airport", "Well-connected by train and road"]
+        },
+        "Jaisalmer, Rajasthan": {
+            overview: "Jaisalmer, the 'Golden City,' is famous for its yellow sandstone architecture, vast desert landscapes, and rich cultural heritage.",
+            attractions: ["Jaisalmer Fort", "Sam Sand Dunes", "Patwon Ki Haveli"],
+            activities: ["Desert safari", "Camel rides", "Cultural performances"],
+            travel_tips: ["Best time: October to March", "Stay hydrated during desert tours"],
+            transportation: ["Nearest airport: Jodhpur Airport", "Well-connected by rail and road"]
+        },
+        "Kerala": {
+            overview: "Known as 'God’s Own Country,' Kerala offers serene backwaters, lush greenery, and a rich cultural experience.",
+            attractions: ["Alleppey Backwaters", "Munnar Tea Gardens", "Kovalam Beach"],
+            activities: ["Houseboat stay", "Ayurvedic spa", "Wildlife safari"],
+            travel_tips: ["Best time: September to March", "Monsoons are great for Ayurvedic treatments"],
+            transportation: ["Nearest airport: Cochin International Airport", "Well-connected by rail and road"]
+        },
+        "Leh, Ladakh": {
+            overview: "A high-altitude desert, Ladakh is known for its stunning landscapes, Buddhist monasteries, and adventure tourism.",
+            attractions: ["Pangong Lake", "Magnetic Hill", "Leh Palace"],
+            activities: ["Trekking", "Biking", "River rafting"],
+            travel_tips: ["Best time: May to September", "Acclimatize properly to avoid altitude sickness"],
+            transportation: ["Nearest airport: Leh Airport", "Well-connected by road via Manali and Srinagar"]
+        },
+        "Meghalaya": {
+            overview: "The 'Abode of Clouds,' Meghalaya is famous for its living root bridges, waterfalls, and rolling hills.",
+            attractions: ["Nohkalikai Falls", "Double Decker Root Bridge", "Shillong Peak"],
+            activities: ["Caving", "Trekking", "Boating in Dawki River"],
+            travel_tips: ["Best time: October to April", "Carry rain gear as it’s one of the wettest places on Earth"],
+            transportation: ["Nearest airport: Shillong Airport", "Well-connected by road"]
+        },
+        "Odisha": {
+            overview: "Odisha is known for its ancient temples, scenic beaches, and tribal culture.",
+            attractions: ["Konark Sun Temple", "Puri Beach", "Chilika Lake"],
+            activities: ["Temple hopping", "Wildlife photography", "Beach relaxation"],
+            travel_tips: ["Best time: October to March", "Try the famous Odisha cuisine"],
+            transportation: ["Nearest airport: Bhubaneswar Airport", "Well-connected by rail and road"]
+        },
+        "Rann of Kutch, Gujarat": {
+            overview: "The White Desert of India, Kutch is famous for its salt flats, cultural festivals, and handicrafts.",
+            attractions: ["Great Rann of Kutch", "Kala Dungar", "Bhuj"],
+            activities: ["Desert safari", "Shopping for handicrafts", "Attending Rann Utsav"],
+            travel_tips: ["Best time: November to February (during Rann Utsav)", "Book accommodations in advance"],
+            transportation: ["Nearest airport: Bhuj Airport", "Well-connected by road"]
+        },
+        "Udaipur, Rajasthan": {
+            overview: "The 'City of Lakes,' Udaipur is known for its stunning palaces, serene lakes, and vibrant culture.",
+            attractions: ["City Palace", "Lake Pichola", "Fateh Sagar Lake"],
+            activities: ["Boat rides", "Cultural performances", "Exploring historic palaces"],
+            travel_tips: ["Best time: October to March", "Book lake-view hotels for a great experience"],
+            transportation: ["Nearest airport: Maharana Pratap Airport", "Well-connected by train and road"]
+        }
+    };
+
+    sendButton.addEventListener("click", processUserInput);
+    voiceButton.addEventListener("click", startVoiceRecognition);
+
+    function processUserInput() {
+        const userMessage = userInput.value.trim();
+        if (!userMessage) return;
+
+        appendMessage("You: " + userMessage);
+        userInput.value = "";
+
+        setTimeout(() => botResponse(userMessage.toLowerCase()), 800);
+    }
+
+    function startVoiceRecognition() {
+        if (!("webkitSpeechRecognition" in window)) {
+            alert("Your browser does not support voice recognition. Please use Chrome or Edge.");
+            return;
+        }
+
+        const recognition = new webkitSpeechRecognition();
+        recognition.lang = "en-US";
+        recognition.start();
+
+        recognition.onresult = function (event) {
+            const transcript = event.results[0][0].transcript;
+            userInput.value = transcript;
+            processUserInput();
+        };
+
+        recognition.onerror = function (event) {
+            console.error("Voice recognition error:", event.error);
+        };
+    }
+
+    function appendMessage(text) {
+        const messageDiv = document.createElement("div");
+        messageDiv.textContent = text;
+        messageDiv.style.marginBottom = "10px";
+        messages.appendChild(messageDiv);
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    function botResponse(userMessage) {
+        let response = "I'm still learning! Try asking about travel destinations.";
+    
+        if (userMessage.includes("hi") || userMessage.includes("hello")) {
+            response = "Hello! I’m Maya. How can I assist you with your travel plans today?";
+        } else {
+            const foundDestination = Object.keys(destinations).find(dest =>
+                userMessage.includes(dest.toLowerCase())
+            );
+    
+            if (foundDestination) {
+                const destinationInfo = destinations[foundDestination];
+    
+                if (userMessage.includes("places to visit") || userMessage.includes("attractions")) {
+                    response = `Attractions in ${foundDestination}: ${destinationInfo.attractions.join(", ")}.`;
+                } else if (userMessage.includes("activities") || userMessage.includes("things to do")) {
+                    response = `Activities in ${foundDestination}: ${destinationInfo.activities.join(", ")}.`;
+                } else if (userMessage.includes("travel tips") || userMessage.includes("tips")) {
+                    response = `Travel tips for ${foundDestination}: ${destinationInfo.travel_tips.join(", ")}.`;
+                } else if (userMessage.includes("transportation") || userMessage.includes("getting there")) {
+                    response = `Transportation options for ${foundDestination}: ${destinationInfo.transportation.join(", ")}.`;
+                } else {
+                    response = `Overview of ${foundDestination}: ${destinationInfo.overview}`;
+                }
+            }
+        }
+    
+        setTimeout(() => {
+            appendMessage("Maya: " + response);
+            speakResponse(response);
+        }, 100);
+    }
+
+    function speakResponse(text) {
+        const speech = new SpeechSynthesisUtterance();
+        speech.text = text;
+        speech.lang = "en-US";
+    
+        // Get the available voices
+        const voices = window.speechSynthesis.getVoices();
+    
+        // Find a female voice
+        const femaleVoice = voices.find(voice => 
+            voice.name.includes("Female") || 
+            voice.name.includes("Google UK English Female") || 
+            voice.name.includes("Samantha") || 
+            voice.name.includes("Microsoft Zira") // Add more female voices if needed
+        );
+    
+        // If a female voice is found, set it
+        if (femaleVoice) {
+            speech.voice = femaleVoice;
+        }
+    
+        // Speak the text
+        window.speechSynthesis.speak(speech);
+    }
+    
+    // Ensure voices are loaded before speaking
+    window.speechSynthesis.onvoiceschanged = () => {
+        // This will trigger when the voices are loaded
+        speakResponse(""); // This can be removed if not needed
+    };
+});

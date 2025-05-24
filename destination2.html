@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Detail - Goa</title>
+    <link rel="stylesheet" href="destination.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="destination.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+        <button id="back-button" class="btn" onclick="goBack()">Back</button>
+    </div>
+    <h1 class="h">Goa</h1>
+    
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.9qfSK2rVZP3O4mIct6k1HQHaEy?w=283&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Taj Mahal" class="carousel-image">
+                <img src="https://th.bing.com/th/id/OIP.GcNGZAUxfH6cH7cPAz7nqQHaEK?w=328&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Agra Fort" class="carousel-image">
+                <img src="https://th.bing.com/th/id/OIP.L_pJ5YL5LO3tZ7ZfMjrRnAHaET?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Mehtab Bagh" class="carousel-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Goa, India's smallest state by area, is located on the southwestern coast along the Arabian Sea. Known for its beautiful beaches, vibrant nightlife, and rich cultural heritage, Goa is a popular tourist destination. The state boasts a unique blend of Indian and Portuguese cultures, evident in its colonial-era architecture, churches, and festivals. Visitors can explore charming fishing villages, enjoy water sports, and savor Goan cuisine, which features a delightful mix of flavors and influences. With its tropical climate, Goa is an ideal destination for both relaxation and adventure.</p>
+    </section>
+
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <div class="attraction">
+            <h3>Palolem Beach</h3>
+            <img src="https://th.bing.com/th/id/OIP.M2MH3RalaV4pVV_nnuJHGAHaE7?w=248&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Taj Mahal" class="a">
+            <p>A serene beach with coconut trees, offering activities like kayaking, dolphin-sighting trips, and yoga classes</p>
+        </div>
+        <div class="attraction">
+            <h3>Dudhsagar Falls</h3>
+            <img src="https://th.bing.com/th/id/OIP.G5lVOV3zWA1yyt75eRvGtgHaEL?w=290&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Agra Fort" class="a">
+            <p>One of India's tallest waterfalls, located inside the Mollem National Park. Best visited during the monsoon season when it's in full flow</p>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Activities</h2>
+        <ul>
+            <li><b>Beach Hopping:</b> Explore popular beaches like Baga, Anjuna, and Palolem for sunbathing, swimming, and water sports.</li><br>
+            <li><b>Water Sports</b> Try thrilling activities like parasailing, jet skiing, and windsurfing at various beaches.</li><br>
+            <li><b>Scuba Diving and Snorkeling</b>Discover the underwater world and vibrant marine life off the coast of Goa.</li>
+        </ul>
+    </section>
+
+    <section id="accommodation">
+        <h2>Accommodation</h2>
+        <p>Here are some recommended places to stay:</p>
+        <ul>
+            <li><strong>ITC Grand Goa, a Luxury Collection Resort & Spa</strong> - A 5-star resort with lush gardens, a spa, and direct access to Arossim Beach.</li><br>
+            <li><strong>Radisson Blu Resort, Goa Cavelossim Beach</strong> - A 5-star hotel known for its beautiful beach views, excellent food, and friendly staff</li><br>
+            <li><strong>Super Townhouse Calangute - Baga Circle</strong> - Located near Calangute Beach, offering spacious rooms and a balcony.</li><br>
+            <li><strong>Dimaru Boutique Hotel</strong> - In Calangute, this hotel features a terrace, restaurant, and bar.</li><br>
+            <li><strong>Grand Opulence Hotel</strong> - Located in Morjim, close to Ashwem Beach, with free bikes and a garden.</li>
+        </ul>
+    </section>
+
+    <section id="travel-tips">
+        <h2>Travel Tips</h2>
+        <p>
+            <ul>
+                <li><strong>Best Time to Visit</strong> - The peak tourist season is from November to February when the weather is cool and pleasant.</li><br>
+                <li><strong>Stay Hydrated</strong> - The tropical climate can be quite warm, so drink plenty of water to stay hydrated.</li><br>
+                <li><strong>Cash and ATMs</strong> - Keep some cash handy, as not all places accept cards, and ATMs might not always be available in remote areas.</li><br>
+                <li><strong>Local Cuisine</strong> - Don't miss out on Goan specialties like fish curry, vindaloo, and bebinca.</li><br>
+                <li><strong>Safety</strong> - Be cautious of your belongings, especially in crowded areas and beaches.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="transportation">
+        <h2>Transportation</h2>
+        <p>
+            <ul>
+                <li><strong>Buses</strong> - he Kadamba Transport Corporation operates buses connecting major cities and towns. They are an economical way to travel but can be crowded during peak hours1.</li><br>
+                <li><strong>Taxis</strong> - Taxis are readily available and can be hired for the day or for a one-way trip. Agree on the fare before starting your journey to avoid overcharging1.</li><br>
+                <li><strong>Motorbikes</strong> - Renting a motorbike or scooter is a popular way to explore Goa's scenic coastal roads. Prices start at around 300 rupees per day1.</li><br>
+                <li><strong>Auto-Rickshaws</strong> - Also known as tuk-tuks, they are perfect for short distances and are a fun way to experience Goa's bustling streets.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <blockquote>
+            <p class="b">"Baga Beach is lively and fun, perfect for beach parties and water sports!" - John</p>
+        </blockquote>
+        <blockquote>
+            <p class="c">"The Basilica of Bom Jesus is a stunning example of baroque architecture and a must-visit in Old Goa." - Alex</p>
+        </blockquote>
+        <blockquote>
+            <p class="d">"Anjuna Market is a treasure trove of unique finds and great bargains."- Emily</p>
+        </blockquote>
+    </section>
+    <section id="booking-options">
+        <h2 class="text-center">Booking Options</h2>
+        <div class="btn-container">
+            <a href="booking1.html?destination=agra" class="btn">Book Flights</a>
+            <a href="hotel1.html?destination=agra" class="btn">Book Hotels</a>
+            <a href="booking.html?destination=agra" class="btn">Book Tours</a>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Travel Booking. All rights reserved.</p>
+    </footer>
+    
+
+    <script>
+        function goBack() {
+            window.location.href = "landing.html";
+        }
+        // Get the modal
+        var modal = document.getElementById("bookingModal");
+
+        // Get the button that opens the modal
+        var btn = document.querySelector(".btn-container .btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

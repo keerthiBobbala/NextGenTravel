@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Detail - Ladakh</title>
+    <link rel="stylesheet" href="destination.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="destination.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+        <button id="back-button" class="btn" onclick="goBack()">Back</button>
+    </div>
+    <h1 class="h">Leh, Ladakh</h1>
+    
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.HBpan7V7q0o8Ro5RYJ8YBQHaEN?w=279&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Taj Mahal" class="carousel-image">
+                <img src="https://th.bing.com/th/id/OIP.F11BVstTvp4mMom2enfOBgHaE6?w=304&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Agra Fort" class="carousel-image">
+                <img src="https://th.bing.com/th/id/OIP.s-JdB6oxpBAiWK0NLBD3qwHaE8?w=281&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Mehtab Bagh" class="carousel-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Ladakh is a breathtaking destination known for its stunning landscapes, including Pangong Lake and Nubra Valley. It offers thrilling adventure activities like trekking and river rafting. Culturally rich, Ladakh is home to historic monasteries and landmarks like Leh Palace and Shanti Stupa.</p>
+    </section>
+
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <div class="attraction">
+            <h3>Pangong Lake</h3>
+            <img src="https://th.bing.com/th/id/OIP.MQ0IlabBz2OundBkmAFOiAE7DF?w=296&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Taj Mahal" class="a">
+            <p>Pangong Lake, renowned for its stunning blue waters and Himalayan backdrop, is an ideal camping destination. Visitors enjoy the serene environment and breathtaking views of the surrounding mountains.</p>
+        </div>
+        <div class="attraction">
+            <h3>Shanti Stupa</h3>
+            <img src="https://th.bing.com/th/id/OIP.z3oMusx6YIFNiRCOw6emxQHaEd?w=320&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Agra Fort" class="a">
+            <p>Shanti Stupa, a stunning white-domed structure, provides a serene atmosphere and panoramic views of Leh. It's a must-visit for its spiritual significance and breathtaking scenery.
+
+            </p>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Activities</h2>
+        <ul>
+            <li><b>Meditation:</b>Find inner peace by meditating in the serene environment.</li><br>
+            <li><b>Photography:</b> Capture stunning panoramic views of Leh and the surrounding mountains.</li><br>
+            <li><b>Sunrise and Sunset Viewing:</b>Witness the beautiful sunrise or sunset from the stupa, offering breathtaking views.</li>
+        </ul>
+    </section>
+
+    <section id="accommodation">
+        <h2>Accommodation</h2>
+        <p>Here are some recommended places to stay:</p>
+        <ul>
+            <li><strong>Gomang Boutique Hotel</strong> -Located just 1.9 miles from Shanti Stupa, this hotel offers comfortable accommodations with beautiful views.</li><br>
+            <li><strong>Hotel Ladakh Greens</strong> - an Organic Retreat: Situated amidst lush greenery, this hotel is close to Leh market and offers excellent amenities.</li><br>
+            <li><strong>The Grand Dragon Ladakh</strong> - An eco-friendly hotel with solar panels and energy-conserving features, located in the ancient city of Leh.</li><br>
+            <li><strong>Adu's Eternal Comfort</strong> - Known for its beautiful gardens and home-cooked meals, this place offers spacious rooms and excellent hospitality.</li><br>
+            <li><strong>Zikzik Holidays</strong> - Located a short walk from Shanti Stupa, this hotel provides a garden, terrace, and restaurant.</li>
+        </ul>
+    </section>
+
+    <section id="travel-tips">
+        <h2>Travel Tips</h2>
+        <p>
+            <ul>
+                <li><strong>Best Time to Visit</strong> - : The best time to visit Ladakh is from April to July. During these months, the weather is pleasant, with temperatures ranging between 15°C to 30°C. This period offers clear skies, making it ideal for sightseeing, camping, and adventure activities1.</li><br>
+                <li><strong>Stay Hydrated</strong> - The desert climate can be dehydrating, so drink plenty of water and carry a water bottle.</li><br>
+                <li><strong>Cash and ATMs</strong> - Carry some cash as not all places accept cards, and ATMs can be sparse in remote areas.</li><br>
+                <li><strong>Respect the Environment</strong> - Dispose of waste properly and avoid littering in natural areas.</li><br>
+                <li><strong>Safety</strong> - Keep your belongings secure and be cautious of pickpockets in crowded places.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="transportation">
+        <h2>Transportation</h2>
+        <p>
+            <ul>
+                <li><strong>Buses</strong> - Local buses are available for public transportation within Leh and nearby areas. They are a budget-friendly option but may not be as comfortable as taxis.</li><br>
+                <li><strong>Taxis</strong> -Taxis are a convenient way to travel within Ladakh. You can book taxis through local taxi services like Ladakh Taxi Booking or Tripvito.</li><br>
+                <li><strong>Rented Vehicles</strong> - You can rent cars or bikes to explore Ladakh at your own pace. Popular options include SUVs like Toyota Innova, Scorpio, and Tata Sumo.</li><br>
+                <li><strong>Bike Rentals</strong> - For the adventurous, bike rentals are available for exploring the rugged terrain and scenic routes of Ladakh.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <blockquote>
+            <p class="b">"A haven of peace with stunning views. The staff were incredibly attentive, and the food was delightful." - Rajesh, Mumbai.</p>
+        </blockquote>
+        <blockquote>
+            <p class="c">"An unforgettable experience. The resort's traditional design and hospitality made our stay truly special." - Amit, Bangalore.</p>
+        </blockquote>
+        <blockquote>
+            <p class="d">"A peaceful retreat with a stunning view of Leh. The atmosphere is perfect for meditation and reflection." - AnilAggarwal, Kurukshetra, India.</p>
+        </blockquote>
+    </section>
+    <section id="booking-options">
+        <h2 class="text-center">Booking Options</h2>
+        <div class="btn-container">
+            <a href="booking1.html?destination=agra" class="btn">Book Flights</a>
+            <a href="hotel1.html?destination=agra" class="btn">Book Hotels</a>
+            <a href="booking.html?destination=agra" class="btn">Book Tours</a>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Travel Booking. All rights reserved.</p>
+    </footer>
+    
+
+    <script>
+        function goBack() {
+            window.location.href = "landing.html";
+        }
+        // Get the modal
+        var modal = document.getElementById("bookingModal");
+
+        // Get the button that opens the modal
+        var btn = document.querySelector(".btn-container .btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

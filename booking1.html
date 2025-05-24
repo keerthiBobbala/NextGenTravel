@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flights</title>
+    <link rel="stylesheet" href="booking1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <button id="back-button" class="btn" onclick="destination.html">Back</button>
+    
+    <div class="container">
+        <h1>Search Flights</h1>
+        <form id="flight-search-form">
+            <div class="form-group">
+                <label for="departure-city">Departure City:</label>
+                <select id="departure-city" name="departure-city" class="a" required>
+                    <option value="">Select Departure City</option>
+                    <option value="Visakhapatnam International Airport">Visakhapatnam International Airport (Visakhapatnam)</option>
+                    <option value="Vijayawada International Airport">Vijayawada International Airport (Vijayawada)</option>
+                    <option value="Tirupati International Airport">Tirupati International Airport (Tirupati)</option>
+                    <option value="Rajahmundry Airport">Rajahmundry Airport (Rajahmundry)</option>
+                    <option value="Kadapa Airport">Kadapa Airport (Kadapa)</option>
+                    <option value="Kurnool Airport">Kurnool Airport (Kurnool)</option>
+                    <option value="Puttaparthi Airport">Puttaparthi Airport (Puttaparthi)</option>
+                    <option value="Pasighat Airport">Pasighat Airport (Pasighat)</option>
+                    <option value="Tezu Airport">Tezu Airport (Tezu)</option>
+                    <option value="Daporijo Airport">Daporijo Airport (Daporijo)</option>
+                    <option value="Ziro Airport">Ziro Airport (Ziro)</option>
+                    <option value="Lokpriya Gopinath Bordoloi International Airport">Lokpriya Gopinath Bordoloi International Airport (Guwahati)</option>
+                    <option value="Dibrugarh Airport">Dibrugarh Airport (Dibrugarh)</option>
+                    <option value="Silchar Airport">Silchar Airport (Silchar)</option>
+                    <option value="Jorhat Airport">Jorhat Airport (Jorhat)</option>
+                    <option value="Tezpur Airport">Tezpur Airport (Tezpur)</option>
+                    <option value="Jay Prakash Narayan International Airport">Jay Prakash Narayan International Airport (Patna)</option>
+                    <option value="Gaya Airport">Gaya Airport (Gaya)</option>
+                    <option value="Swami Vivekananda Airport">Swami Vivekananda Airport (Raipur)</option>
+                    <option value="Bilaspur Airport">Bilaspur Airport (Bilaspur)</option>
+                    <option value="Dabolim Airport">Dabolim Airport (Goa)</option>
+                    <option value="Mopa Airport">Mopa Airport (Goa)</option>
+                    <option value="Sardar Vallabhbhai Patel International Airport">Sardar Vallabhbhai Patel International Airport (Ahmedabad)</option>
+                    <option value="Surat Airport">Surat Airport (Surat)</option>
+                    <option value="Vadodara Airport">Vadodara Airport (Vadodara)</option>
+                    <option value="Rajkot Airport">Rajkot Airport (Rajkot)</option>
+                    <option value="Bhavnagar Airport">Bhavnagar Airport (Bhavnagar)</option>
+                    <option value="Jamnagar Airport">Jamnagar Airport (Jamnagar)</option>
+                    <option value="Kandla Airport">Kandla Airport (Kandla)</option>
+                    <option value="Porbandar Airport">Porbandar Airport (Porbandar)</option>
+                    <option value="Hisar Airport">Hisar Airport (Hisar)</option>
+                    <option value="Kangra Airport">Kangra Airport (Kangra)</option>
+                    <option value="Kullu-Manali Airport">Kullu-Manali Airport (Bhuntar)</option>
+                    <option value="Shimla Airport">Shimla Airport (Shimla)</option>
+                    <option value="Birsa Munda Airport">Birsa Munda Airport (Ranchi)</option>
+                    <option value="Deoghar Airport">Deoghar Airport (Deoghar)</option>
+                    <option value="Dhanbad Airport">Dhanbad Airport (Dhanbad)</option>
+                    <option value="Kempegowda International Airport">Kempegowda International Airport (Bengaluru)</option>
+                    <option value="Mangalore International Airport">Mangalore International Airport (Mangalore)</option>
+                    <option value="Hubli Airport">Hubli Airport (Hubli)</option>
+                    <option value="Belgaum Airport">Belgaum Airport (Belgaum)</option>
+                    <option value="Mysore Airport">Mysore Airport (Mysore)</option>
+                    <option value="Cochin International Airport">Cochin International Airport (Kochi)</option>
+                    <option value="Trivandrum International Airport">Trivandrum International Airport (Thiruvananthapuram)</option>
+                    <option value="Calicut International Airport">Calicut International Airport (Kozhikode)</option>
+                    <option value="Kannur International Airport">Kannur International Airport (Kannur)</option>
+                    <option value="Devi Ahilya Bai Holkar Airport">Devi Ahilya Bai Holkar Airport (Indore)</option>
+                    <option value="Raja Bhoj Airport">Raja Bhoj Airport (Bhopal)</option>
+                    <option value="Jabalpur Airport">Jabalpur Airport (Jabalpur)</option>
+                    <option value="Gwalior Airport">Gwalior Airport (Gwalior)</option>
+                    <option value="Chhatrapati Shivaji Maharaj International Airport">Chhatrapati Shivaji Maharaj International Airport (Mumbai)</option>
+                    <option value="Pune Airport">Pune Airport (Pune)</option>
+                    <option value="Dr. Babasaheb Ambedkar International Airport">Dr. Babasaheb Ambedkar International Airport (Nagpur)</option>
+                    <option value="Aurangabad Airport">Aurangabad Airport (Aurangabad)</option>
+                    <option value="Nashik Airport">Nashik Airport (Nashik)</option>
+                    <option value="Shirdi Airport">Shirdi Airport (Shirdi)</option>
+                    <option value="Imphal International Airport">Imphal International Airport (Imphal)</option>
+                    <option value="Shillong Airport">Shillong Airport (Shillong)</option>
+                    <option value="Baljek Airport">Baljek Airport (Tura)</option>
+                    <option value="Lengpui Airport">Lengpui Airport (Aizawl)</option>
+                    <option value="Dimapur Airport">Dimapur Airport (Dimapur)</option>
+                    <option value="Biju Patnaik International Airport">Biju Patnaik International Airport (Bhubaneswar)</option>
+                    <option value="Jharsuguda Airport">Jharsuguda Airport (Jharsuguda)</option>
+                    <option value="Sri Guru Ram Dass Jee International Airport">Sri Guru Ram Dass Jee International Airport (Amritsar)</option>
+                    <option value="Chandigarh International Airport">Chandigarh International Airport (Chandigarh)</option>
+                    <option value="Ludhiana Airport">Ludhiana Airport (Ludhiana)</option>
+                    <option value="Pathankot Airport">Pathankot Airport (Pathankot)</option>
+                    <option value="Jaipur International Airport">Jaipur International Airport (Jaipur)</option>
+                    <option value="Jodhpur Airport">Jodhpur Airport (Jodhpur)</option>
+                    <option value="Udaipur Airport">Udaipur Airport (Udaipur)</option>
+                    <option value="Bikaner Airport">Bikaner Airport (Bikaner)</option>
+                    <option value="Kota Airport">Kota Airport (Kota)</option>
+                    <option value="Pakyong Airport">Pakyong Airport (Pakyong)</option>
+                    <option value="Chennai International Airport">Chennai International Airport (Chennai)</option>
+                    <option value="Coimbatore International Airport">Coimbatore International Airport (Coimbatore)</option>
+                    <option value="Madurai Airport">Madurai Airport (Madurai)</option>
+                    <option value="Tiruchirappalli International Airport">Tiruchirappalli International Airport (Tiruchirappalli)</option>
+                    <option value="Tuticorin Airport">Tuticorin Airport (Tuticorin)</option>
+                    <option value="Salem Airport">Salem Airport (Salem)</option>
+                    <option value="Rajiv Gandhi International Airport">Rajiv Gandhi International Airport (Hyderabad)</option>
+                    <option value="Maharaja Bir Bikram Airport">Maharaja Bir Bikram Airport (Agartala)</option>
+                    <option value="Chaudhary Charan Singh International Airport">Chaudhary Charan Singh International Airport (Lucknow)</option>
+                    <option value="Lal Bahadur Shastri Airport">Lal Bahadur Shastri Airport (Varanasi)</option>
+                    <option value="Gorakhpur Airport">Gorakhpur Airport (Gorakhpur)</option>
+                    <option value="Agra Airport">Agra Airport (Agra)</option>
+                    <option value="Kanpur Airport">Kanpur Airport (Kanpur)</option>
+                    <option value="Prayagraj Airport">Prayagraj Airport (Prayagraj)</option>
+                    <option value="Jolly Grant Airport">Jolly Grant Airport (Dehradun)</option>
+                    <option value="Pantnagar Airport">Pantnagar Airport (Pantnagar)</option>
+                    <option value="Netaji Subhas Chandra Bose International Airport">Netaji Subhas Chandra Bose International Airport (Kolkata)</option>
+                    <option value="Bagdogra Airport">Bagdogra Airport (Bagdogra)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="arrival-city">Arrival City:</label>
+                <input type="text" id="arrival-city" name="arrival-city" required>
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <div class="form-group">
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" required>
+            </div>
+            <button type="submit" class="btn">Search Flights</button>
+        </form>
+
+        <div id="flight-options" class="hidden">
+            <h2>Flight Options</h2>
+            <ul id="flights-list">
+                <!-- Flight options will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div id="passenger-info" class="hidden">
+            <h2>Passenger Information</h2>
+            <form id="passenger-form">
+                <div class="form-group">
+                    <label for="passenger-name">Name:</label>
+                    <input type="text" id="passenger-name" name="passenger-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-info">Contact Information:</label>
+                    <input type="email" id="contact-info" name="contact-info" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests"></textarea>
+                </div>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="booking1.js"></script>
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>

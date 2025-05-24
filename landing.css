@@ -1,0 +1,305 @@
+
+.logo{
+    margin-top:-10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00008B;
+    color: white;
+    padding: 15px;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-top: 60px; /* Add padding to the top of the body */
+}
+
+
+nav .logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.destination-container { display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    padding: 5px;
+    margin-left:-20px; 
+    margin-top:-20px; }
+
+.destination { background: #ffffff; 
+    border: 1px solid #dddddd;
+     border-radius: 5px;
+      margin-top: 30px;
+       margin-right:5px;
+        padding: 3px; 
+        width: 225px;
+         text-align: center;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ font-family: 'Montserrat', sans-serif;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+
+ }
+
+ .destination img { 
+    width: 100%;
+ border-radius: 5px; }
+
+.btn {
+    display: inline-block;
+    margin-bottom:auto;
+    padding: 10px 15px;
+    background: #00008B;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size:15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #00008B;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .destination {
+        width: 90%; /* Make cards take more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+}
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.a
+{
+    height:150px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-to-cart {
+    background: #FF4F00; /* Green background for Add to Cart */
+    margin-left: 10px; /* Space between buttons */
+}
+#chat-container {
+    width: 300px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+#send-btn {
+    padding: 5px 10px;
+    background: #00008B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.h
+{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px; /* Reduced max-width */
+}
+
+#search-input {
+    flex: 1;
+    min-width: 80px; /* Reduced min-width */
+    max-width: 200px; /* Added max-width constraint */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px; /* Reduced font size */
+    margin-right: 10px;
+}
+
+#search-button, #voice-search-button {
+    padding: 8px 12px; /* Adjusted padding */
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#search-button {
+    background: #00008B;
+    color: white;
+    margin-right: 10px;
+}
+
+#search-button:hover {
+    background: #0056b3;
+}
+
+#voice-search-button {
+    background-color: #ff5722;
+    color: white;
+    width: 35px; /* Reduced button size */
+    height: 35px; /* Reduced button size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#voice-search-button:hover {
+    background-color: #218838; 
+    transform: scale(1.1);
+}
+
+#voice-search-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 80%; /* Further reduced max-width for smaller screens */
+    }
+    
+    #search-input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    #search-button, #voice-search-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+/* Add this to your landing.css */
+#mini-cart {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    right: 20px; /* Position it near the cart icon */
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Width of the mini cart */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+#mini-cart h3 {
+    margin: 0;
+    padding: 10px;
+    background: #00008B;
+    color: white;
+}
+
+#mini-cart .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#mini-cart .item img {
+    width: 50px; /* Thumbnail size */
+    height: 50px; /* Thumbnail size */
+    margin-right: 10px;
+}
+
+#mini-cart .item p {
+    margin: 0;
+}
+
+
