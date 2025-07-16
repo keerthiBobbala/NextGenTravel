@@ -1,7 +1,9 @@
 ✈️ NxtGen Travel — Intelligent Travel Assistance
+
 NxtGen Travel is an AI-powered smart travel booking system that helps modern travelers plan, search, and book trips easily using intelligent automation, a chatbot, and voice search — all through a simple, user-friendly web interface.
 
 🚀 Features
+
 🔐 Secure Login System
 
 🌍 Popular Destinations with Grid Cards
@@ -30,6 +32,7 @@ NxtGen Travel is an AI-powered smart travel booking system that helps modern tra
 5.Run the local server environment using XAMPP.
 
 🗂️ Tech Stack
+
 1.Frontend: HTML, CSS, JavaScript
 
 2.Database: MySQL 8.3 (via Command Line)
@@ -75,6 +78,7 @@ check_out   DATE
 4.Open MySQL 8.3 Command Line and run:
 
 CREATE DATABASE travel_booking;
+
 USE travel_booking;
 
 CREATE TABLE flight_bookings (
@@ -99,7 +103,7 @@ Link your HTML/JS/PHP scripts to connect with travel_booking DB.
 
 Visit http://localhost/TravelBooking/ in your browser.
 
-Use login, chatbot, voice search & booking forms.
+Use login (please register and then log in with your credentials), chatbot, voice search & booking forms.
 
 View bookings using MySQL Command Line.
 
