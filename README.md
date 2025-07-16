@@ -69,6 +69,7 @@ check_in    DATE
 check_out   DATE
 
 ⚙️ How to Run Locally
+
 1.Clone or download this repository.
 
 2.Install XAMPP and start Apache and MySQL modules.
@@ -108,6 +109,7 @@ Use login (please register and then log in with your credentials), chatbot, voic
 View bookings using MySQL Command Line.
 
 🔮 Future Scope
+
 1.Real-time weather & traffic updates.
 
 2.AR/VR previews for destinations & hotels.
@@ -119,6 +121,7 @@ View bookings using MySQL Command Line.
 Screenshots
 
 TravelBooking/
+
 ├── screenshots/
 
 │   ├── login.png
