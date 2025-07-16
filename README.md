@@ -120,10 +120,15 @@ Screenshots
 
 TravelBooking/
 ├── screenshots/
+
 │   ├── login.png
+
 │   ├── destinations.png
+
 │   ├── chatbot.png
+
 │   ├── flight_booking.png
+
 │   ├── hotel_booking.png
 
 
