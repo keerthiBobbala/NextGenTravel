@@ -1,4 +1,4 @@
-✈️ NxtGen Travel — Intelligent Travel Assistance
+## ✈️ NxtGen Travel — Intelligent Travel Assistance
 
 NxtGen Travel is an AI-powered smart travel booking system that helps modern travelers plan, search, and book trips easily using intelligent automation, a chatbot, and voice search — all through a simple, user-friendly web interface.
 
@@ -7,7 +7,7 @@ NxtGen Travel is an AI-powered smart travel booking system that helps modern tra
 [▶️ Watch the Demo Video] (https://screenapp.io/app/#/shared/HuS_fEbjor)
 
 
-🚀 Features
+## 🚀 Features
 
 🔐 Secure Login System
 
@@ -24,7 +24,7 @@ NxtGen Travel is an AI-powered smart travel booking system that helps modern tra
 💾 Booking Data Storage using MySQL 8.3 (Command Line)
 
 
-💡 Project Goals
+## 💡 Project Goals
 
 1.Build an AI-driven travel assistant combining chatbot & voice recognition.
 
@@ -36,7 +36,7 @@ NxtGen Travel is an AI-powered smart travel booking system that helps modern tra
 
 5.Run the local server environment using XAMPP.
 
-🗂️ Tech Stack
+## 🗂️ Tech Stack
 
 1.Frontend: HTML, CSS, JavaScript
 
@@ -48,7 +48,7 @@ NxtGen Travel is an AI-powered smart travel booking system that helps modern tra
 
 5.Chatbot: Custom JavaScript logic
 
-🗄️ Database Structure
+## 🗄️ Database Structure
 
 Database: travel_booking
 
@@ -73,7 +73,7 @@ hotel       VARCHAR(...) -- hotel name
 check_in    DATE
 check_out   DATE
 
-⚙️ How to Run Locally
+## ⚙️ How to Run Locally
 
 1.Clone or download this repository.
 
@@ -113,7 +113,7 @@ Use login (please register and then log in with your credentials), chatbot, voic
 
 View bookings using MySQL Command Line.
 
-🔮 Future Scope
+## 🔮 Future Scope
 
 1.Real-time weather & traffic updates.
 
@@ -123,7 +123,7 @@ View bookings using MySQL Command Line.
 
 4.Multilingual support for global users.
 
-Screenshots
+## Screenshots
 
 TravelBooking/
 
@@ -140,7 +140,7 @@ TravelBooking/
 │   ├── hotel_booking.png
 
 
-🙌 Author
+## 🙌 Author
 Bobbala Keerthi Chandana
 IcfaiTech, Hyderabad
 
