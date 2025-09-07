@@ -2,10 +2,6 @@
 
 NxtGen Travel is an AI-powered smart travel booking system that helps modern travelers plan, search, and book trips easily using intelligent automation, a chatbot, and voice search — all through a simple, user-friendly web interface.
 
-## 📽️ Project Demo
-
-[▶️ Watch the Demo Video] (https://screenapp.io/app/#/shared/HuS_fEbjor)
-
 
 ## 🚀 Features
 
